@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Atlantes de Tula</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="content">
+        <H1>Los Atlantes <br> de Tula</H1>
+        <p class="text1">Los atlantes de Tula son cuatro figuras antropomorfas, 
+            pertenecientes a la cultura tolteca, que se encuentran 
+            sobre la Pirámide B, en la zona arqueológica de Tula, 
+            Estado de Hidalgo, México, también denominada como 
+            Tollan-Xicocotitlan. <br> Miden poco más de 4,5 metros 
+            de altura y están labrados en bloques de basalto 
+            ensamblados.
+        </p>
+    </div>
+    <div class="scene">
+        <model-viewer bounds="tight" src="assets/models/atlante.glb" ar ar-modes="webxr scene-viewer quick-look" 
+        camera-controls poster="assets/images/poster.webp" shadow-intensity="1" skybox-image="assets/images/field.hdr" 
+        exposure="1.12" shadow-softness="1" camera-orbit="-0.1708deg 93.25deg auto" 
+        camera-target="0.01m -0.02m 0.03112m" min-camera-orbit="auto auto 5.843m" 
+        min-field-of-view="15.4deg"> 
+    
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">
+           Ver en tu espacio
+        </button>
+        <div id="ar-prompt">
+            <img src="assets\images\ar_hand_prompt.png">
+        </div>
+        <div class="logo">
+            <img class="imagen" src="assets/images/logo.png" alt="Logo Tv4">
+        </div>
+    
+        </model-viewer>
+
+    </div>
+
+   
+
+
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
