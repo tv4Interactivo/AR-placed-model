@@ -20,18 +20,23 @@
     font-size: 6rem;
     margin: auto;
     color: #fde698;
+    
   }
 
   .text1{
     font-size: 1.5rem;
     color: #fde698;
     margin: 3rem 25%;
+    
   }
 
   .content{
     font-family: 'Overpass', sans-serif;
     background-color:#484750;
     padding: 2rem 4rem;
+    /* background: url(assets/images/figures.svg);
+    background-size: cover; */
+    
   }
 
   .imagen{
