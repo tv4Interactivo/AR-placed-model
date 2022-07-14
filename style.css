@@ -1,15 +1,71 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
   
   body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
+    
     text-align: center;
     background-color:#484750;
     color: #fde698;
   }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 5%;
+  }
+
+  .dropbtn{
+  background-color: #484750;
+  color: #fde698;
+  padding:  30px 47px;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
   
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #26262b;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    font-family: 'Overpass', sans-serif;
+    color: #fde698;
+    padding: 12px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #151518}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .interactivo{
+    width: 15%;
+    height: 15%;
+    padding: 2rem;
+  }
+
   .scene{
     padding: 2rem 4rem;
   }
@@ -44,6 +100,8 @@
   .content{
     font-family: 'Overpass', sans-serif;
     padding: 2rem 4rem;
+    background-image: url("assets/images/bg.png");
+    background-size:contain;
   }
 
   .imagen{
@@ -54,6 +112,16 @@
   }
 
   @media screen and (max-width: 500px){
+    .navbar{
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+    
+    .interactivo{
+      width: 40%;
+    }
+
     h1{
       font-family: 'Averia Serif Libre', cursive;
       font-size: 3rem;

@@ -7,6 +7,7 @@
     <title>Los Atlantes de Tula</title>
 
     <link rel="stylesheet" href="style.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,19 @@
   referrerpolicy="no-referrer" />
 </head>
 <body>
+
+    <nav class="navbar">
+        <img class="interactivo" src="assets/images/i_white.png" alt="logo 4interativo">
+
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+                <a href="#"><i class="fa-solid fa-house"></i></a>
+                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+                <a href="#"><i class="fa-solid fa-language"></i></a>
+            </div>
+        </div>
+    </nav>
    
     <div class="content">
         <H1>Los Atlantes <br> de Tula</H1>
@@ -29,7 +43,7 @@
             de altura y están labrados en bloques de basalto 
             ensamblados.
         </p>
-        
+    
         <h3> Conoce de cerca a un Atlante <i class="fa-solid fa-down-long"></i></h3>
     </div>
     <div class="scene">
@@ -42,9 +56,7 @@
         <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
         </div>
-        <button slot="ar-button" id="ar-button">
-           Ver en tu espacio
-        </button>
+        <button slot="ar-button" id="ar-button">Ver en tu espacio</button>
         <div id="ar-prompt">
             <img src="assets\images\ar_hand_prompt.png">
         </div>
