@@ -20,34 +20,55 @@
 </head>
 <body>
 
+    <div id="alert" style="display: none">
+        <p class="alert">¡Link copiado al portapapeles!</p>
+        <button onclick="closeAlert()" id="closeAlert"><i class="fa-solid fa-xmark"></i></button>
+    </div>
     <nav class="navbar">
         <img class="interactivo" src="assets/images/i_white.png" alt="logo 4interativo">
 
         <div class="dropdown">
-            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-            <div class="dropdown-content">
-                <a href="#"><i class="fa-solid fa-house"></i></a>
-                <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
-                <a href="#"><i class="fa-solid fa-language"></i></a>
+            <button onclick="toggleDisplay()" id="dropbtn" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div id="dropdown-content" class="dropdown-content" style="display: none">
+                <button href="#"><i class="home fa-solid fa-house"></i></button>
+                <button onclick="copyURL()" href="#"><i class="share fa-solid fa-share-nodes"></i></button>
+                <button onclick="changeLang()" href="#"><i class="lang fa-solid fa-language"></i></button>
             </div>
         </div>
     </nav>
    
     <div class="content">
-        <H1>Los Atlantes <br> de Tula</H1>
-        <p class="text1">Los atlantes de Tula son cuatro figuras antropomorfas, 
+        <div id="text-esp" style="display: block;">
+            <h1>Los Atlantes <br> de Tula</h1>
+        <p> Los atlantes de Tula son cuatro figuras antropomorfas, 
             pertenecientes a la cultura tolteca, que se encuentran 
             sobre la Pirámide B, en la zona arqueológica de Tula, 
             Estado de Hidalgo, México, también denominada como 
-            Tollan-Xicocotitlan. <br> Miden poco más de 4,5 metros 
+            Tollan-Xicocotitlan. <br> <br>Miden poco más de 4,5 metros 
             de altura y están labrados en bloques de basalto 
             ensamblados.
         </p>
-    
         <h3> Conoce de cerca a un Atlante <i class="fa-solid fa-down-long"></i></h3>
+        </div>
+
+        <div id="text-eng" style="display: none;">
+            <h1>The Atlanteans <br> of Tula</h1>
+        <p>The Atlanteans of Tula are four anthropomorphic figures,
+            belonging to the Toltec culture, found
+            on Pyramid B, in the archaeological zone of Tula,
+            State of Hidalgo, Mexico, also known as
+            Tollan-Xicocotitlan. <br> <br>They measure just over 4.5 meters
+            tall and are carved from basalt blocks
+            assembled.
+        </p>
+        <h3> Get up close to an Atlantean <i class="fa-solid fa-down-long"></i></h3>
+        </div>
+       
+        
+        
     </div>
     <div class="scene">
-        <model-viewer bounds="tight" src="assets/models/atlante.glb" ar ar-modes="webxr scene-viewer quick-look" 
+        <model-viewer enable-pan bounds="tight" src="assets/models/atlante.glb" ar ar-modes="webxr scene-viewer quick-look" 
         camera-controls poster="assets/images/poster.webp" shadow-intensity="1" skybox-image="assets/images/field.hdr" 
         exposure="1.12" shadow-softness="1" camera-orbit="-0.1708deg 93.25deg auto" 
         camera-target="0.01m -0.02m 0.03112m" min-camera-orbit="auto auto 5.843m" 
