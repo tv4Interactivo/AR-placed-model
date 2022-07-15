@@ -1,99 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Los Atlantes de Tula</title>
 
-    <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@200&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous"
-  referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <div id="alert" style="display: none">
-        <p class="alert">¡Link copiado al portapapeles!</p>
-        <button onclick="closeAlert()" id="closeAlert"><i class="fa-solid fa-xmark"></i></button>
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+
+    <div  class="animate__animated animate__fadeInDown" id="alert" style="display: none">
+      <p class="alert">¡Copiado al portapapeles!</p>
+      <button onclick="closeAlert()" id="closeAlert">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
     </div>
+
     <nav class="navbar">
-        <img class="interactivo" src="assets/images/i_white.png" alt="logo 4interativo">
+      <img
+        class="interactivo"
+        src="assets/images/i_white.png"
+        alt="logo 4interativo"
+      />
 
-        <div class="dropdown">
-            <button onclick="toggleDisplay()" id="dropbtn" class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-            <div id="dropdown-content" class="dropdown-content" style="display: none">
-                <button href="#"><i class="home fa-solid fa-house"></i></button>
-                <button onclick="copyURL()" href="#"><i class="share fa-solid fa-share-nodes"></i></button>
-                <button onclick="changeLang()" href="#"><i class="lang fa-solid fa-language"></i></button>
-            </div>
+      <div class="dropdown">
+        <button onclick="toggleDisplay()" id="dropbtn" class="dropbtn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div
+          id="dropdown-content"
+          class="dropdown-content animate__animated animate__fadeInDown"
+          style="display: none"
+        >
+          <button href="#"><i class="home fa-solid fa-house"></i></button>
+          <button onclick="copyURL()" href="#">
+            <i class="share fa-solid fa-share-nodes"></i>
+          </button>
+          <button onclick="changeLang()" href="#">
+            <i class="lang fa-solid fa-language"></i>
+          </button>
         </div>
+      </div>
     </nav>
-   
-    <div class="content">
-        <div id="text-esp" style="display: block;">
-            <h1>Los Atlantes <br> de Tula</h1>
-        <p> Los atlantes de Tula son cuatro figuras antropomorfas, 
-            pertenecientes a la cultura tolteca, que se encuentran 
-            sobre la Pirámide B, en la zona arqueológica de Tula, 
-            Estado de Hidalgo, México, también denominada como 
-            Tollan-Xicocotitlan. <br> <br>Miden poco más de 4,5 metros 
-            de altura y están labrados en bloques de basalto 
-            ensamblados.
-        </p>
-        <h3> Conoce de cerca a un Atlante <i class="fa-solid fa-down-long"></i></h3>
-        </div>
 
-        <div id="text-eng" style="display: none;">
-            <h1>The Atlanteans <br> of Tula</h1>
-        <p>The Atlanteans of Tula are four anthropomorphic figures,
-            belonging to the Toltec culture, found
-            on Pyramid B, in the archaeological zone of Tula,
-            State of Hidalgo, Mexico, also known as
-            Tollan-Xicocotitlan. <br> <br>They measure just over 4.5 meters
-            tall and are carved from basalt blocks
-            assembled.
+    <div class="content">
+      <div id="text-esp" style="display: block" class="animate__animated animate__fadeInup">
+        <h1>
+          Los Atlantes <br />
+          de Tula
+        </h1>
+        <p>
+          Los atlantes de Tula son cuatro figuras antropomorfas, pertenecientes
+          a la cultura tolteca, que se encuentran sobre la Pirámide B, en la
+          zona arqueológica de Tula, Estado de Hidalgo, México, también
+          denominada como Tollan-Xicocotitlan. <br />
+          <br />Miden poco más de 4,5 metros de altura y están labrados en
+          bloques de basalto ensamblados.
         </p>
-        <h3> Get up close to an Atlantean <i class="fa-solid fa-down-long"></i></h3>
-        </div>
-       
-        
-        
+        <h3>
+          Conoce de cerca a un Atlante <i class="fa-solid fa-down-long"></i>
+        </h3>
+      </div>
+
+      <div id="text-eng" style="display: none" class="animate__animated animate__fadeInUp">
+        <h1>
+          The Atlanteans <br />
+          of Tula
+        </h1>
+        <p>
+          The Atlanteans of Tula are four anthropomorphic figures, belonging to
+          the Toltec culture, found on Pyramid B, in the archaeological zone of
+          Tula, State of Hidalgo, Mexico, also known as Tollan-Xicocotitlan.
+          <br />
+          <br />They measure just over 4.5 meters tall and are carved from
+          basalt blocks assembled.
+        </p>
+        <h3>
+          Get up close to an Atlantean <i class="fa-solid fa-down-long"></i>
+        </h3>
+      </div>
     </div>
     <div class="scene">
-        <model-viewer enable-pan bounds="tight" src="assets/models/atlante.glb" ar ar-modes="webxr scene-viewer quick-look" 
-        camera-controls poster="assets/images/poster.webp" shadow-intensity="1" skybox-image="assets/images/field.hdr" 
-        exposure="1.12" shadow-softness="1" camera-orbit="-0.1708deg 93.25deg auto" 
-        camera-target="0.01m -0.02m 0.03112m" min-camera-orbit="auto auto 5.843m" 
-        min-field-of-view="15.4deg"> 
-    
+      <model-viewer
+        enable-pan
+        bounds="tight"
+        src="assets/models/atlante.glb"
+        ar
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        poster="assets/images/poster.webp"
+        shadow-intensity="1"
+        skybox-image="assets/images/field.hdr"
+        exposure="1.12"
+        shadow-softness="1"
+        camera-orbit="-0.1708deg 93.25deg auto"
+        camera-target="0.01m -0.02m 0.03112m"
+        min-camera-orbit="auto auto 5.843m"
+        min-field-of-view="15.4deg"
+      >
         <div class="progress-bar hide" slot="progress-bar">
-            <div class="update-bar"></div>
+          <div class="update-bar"></div>
         </div>
         <button slot="ar-button" id="ar-button">Ver en tu espacio</button>
         <div id="ar-prompt">
-            <img src="assets\images\ar_hand_prompt.png">
+          <img src="assets\images\ar_hand_prompt.png" />
         </div>
         <div class="logo">
-            <img class="imagen" src="assets/images/logo.png" alt="Logo Tv4">
+          <img class="imagen" src="assets/images/logo.png" alt="Logo Tv4" />
         </div>
-    
-        </model-viewer>
-
+      </model-viewer>
     </div>
-
-   
-
 
     <script src="script.js"></script>
     <!-- Loads <model-viewer> for browsers: -->
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </body>
 </html>
