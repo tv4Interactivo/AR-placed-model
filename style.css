@@ -21,12 +21,14 @@ body {
   top: 8%;
   left: 35%;
   transform: translate(-50%, -50%);
+  
 }
 
 .alert {
   font-size: 20px;
   margin: 0;
   padding: 0 20px;
+  text-align: center;
 }
 
 #closeAlert {
@@ -125,6 +127,7 @@ h3 {
 p {
   font-size: 1.5rem;
   margin: 3rem 25%;
+  text-align: justify;
 }
 
 .content {
@@ -142,7 +145,7 @@ p {
   right: 20px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width:320px) and (max-width: 500px) {
   #alert {
     background-color: #26262b;
     border-radius: 10px;
@@ -154,7 +157,7 @@ p {
   }
 
   .alert{
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .navbar {
@@ -167,17 +170,17 @@ p {
     width: 40%;
   }
 
-  #text-esp h1 {
+  h1 {
     font-family: "Averia Serif Libre", cursive;
     font-size: 3rem;
     margin: auto;
     color: #fde698;
   }
 
-  #text-esp h3 {
+  h3 {
     font-family: "Averia Serif Libre", cursive;
     font-size: 2rem;
-    margin: auto 1%;
+    margin: auto 10%;
     padding: 10px;
     color: #484750;
     background-color: #fde698;
@@ -197,7 +200,7 @@ p {
   }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (min-width:500px) and (max-width: 840px) {
   #alert {
     background-color:#26262b;
     border-radius: 10px;
@@ -208,9 +211,12 @@ p {
     transform: translate(-50%, -50%);
   }
 
-
   #alert button {
     padding: 0 20px;
+  }
+
+  .alert{
+    font-size: 25px;
   }
 
   .interactivo {
@@ -219,7 +225,7 @@ p {
 
   h1 {
     font-family: "Averia Serif Libre", cursive;
-    font-size: 4rem;
+    font-size: 6rem;
     margin: auto;
     color: #fde698;
   }
@@ -234,10 +240,9 @@ p {
     border-radius: 30px;
   }
 
-  .text1 {
-    font-size: 1.7rem;
-    color: #fde698;
-    margin: 3rem 5%;
+  p {
+    font-size: 1.5rem;
+    margin: 3rem 2%;
   }
 
   .content {
