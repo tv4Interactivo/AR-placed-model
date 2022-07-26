@@ -33,15 +33,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
   </head>
   <body>
-
-    <div  class="animate__animated animate__fadeInDown" id="alert" style="display: none">
-      <p class="alert">¡Copiado al portapapeles!</p>
-      <button onclick="closeAlert()" id="closeAlert">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </div>
 
     <nav class="navbar">
       <img
@@ -56,10 +58,10 @@
         </button>
         <div
           id="dropdown-content"
-          class="dropdown-content animate__animated animate__fadeInDown"
+          class="dropdown-content animate__animated animate__fadeIn"
           style="display: none"
         >
-          <button href="#"><i class="home fa-solid fa-house"></i></button>
+          <button href="https://tv4interactivo.github.io/4interactivo/"><i class="home fa-solid fa-house"></i></button>
           <button onclick="copyURL()" href="#">
             <i class="share fa-solid fa-share-nodes"></i>
           </button>
@@ -71,7 +73,7 @@
     </nav>
 
     <div class="content">
-      <div id="text-esp" style="display: block" class="animate__animated animate__fadeInup">
+      <div id="text-esp" style="display: block" class="animate__animated animate__fadeInUp">
         <h1>
           Los Atlantes <br />
           de Tula
@@ -124,6 +126,7 @@
         camera-target="0.01m -0.02m 0.03112m"
         min-camera-orbit="auto auto 5.843m"
         min-field-of-view="15.4deg"
+        disable-zoom
       >
         <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
@@ -144,5 +147,6 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
