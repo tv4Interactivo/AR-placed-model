@@ -30,22 +30,15 @@ function copyURL() {
   const btnHome = document.getElementsByClassName("share");
   navigator.clipboard.writeText(window.location.href);
 
-  const popup = document.getElementById("alert");
-  popup.style.display = "block";
+  Swal.fire({
+    text: '¡Enlace copiado al portapapeles!',
+    confirmButtonText: 'Ok',
+    background: '#484750',
+    color: '#fde698'
+  })
+  
   toggle.style.display = "none";
 }
-
-function closeAlert() {
-  const closeBtn = document.getElementById("alert");
-  closeBtn.style.display = "none";
-}
-
-document.addEventListener("mouseup", function (e) {
-  var container = document.getElementById("alert");
-  if (!container.contains(e.target)) {
-    container.style.display = "none";
-  }
-});
 
 //change language
 function changeLang() {
